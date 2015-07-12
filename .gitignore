@@ -1,0 +1,11 @@
+.DS_Store
+.idea
+.tm_properties
+*.egg-info
+pip-log.txt
+*.egg
+*.pyc
+*.swp
+access.json
+info.json
+queue.json
