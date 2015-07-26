@@ -1,12 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+from __future__ import print_function
 import json
-import os
 import random
-import time
 from twython import Twython
-from twython import TwythonError
 
 myhandle = 'woprthings'
 
@@ -23,9 +21,9 @@ def get_phrase():
         return phrase
 
 def main():
-    print '[i] @{myhandle} ACTIVATE!'.format(myhandle=myhandle)
+    print('[i] @{myhandle} ACTIVATE!').format(myhandle=myhandle)
     twutt_text = get_phrase()
-    print '[!] Gonna twutt: {twutt_text}'.format(twutt_text=twutt_text)
+    print('[!] Gonna twutt: {twutt_text}').format(twutt_text=twutt_text)
     twitter = auth()
     twitter.update_status(status=twutt_text)
 
