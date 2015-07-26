@@ -21,9 +21,9 @@ def get_phrase():
         return phrase
 
 def main():
-    print('[i] @{myhandle} ACTIVATE!').format(myhandle=myhandle)
+    print('[i] @{myhandle} ACTIVATE!'.format(myhandle=myhandle))
     twutt_text = get_phrase()
-    print('[!] Gonna twutt: {twutt_text}').format(twutt_text=twutt_text)
+    print('[!] Gonna twutt: {twutt_text}'.format(twutt_text=twutt_text))
     twitter = auth()
     twitter.update_status(status=twutt_text)
 
