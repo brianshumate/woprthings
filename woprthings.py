@@ -1,10 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from __future__ import print_function
-import json
-import random
-from twython import Twython
+import json, random
+from twython import Twython, TwythonError
 
 myhandle = 'woprthings'
 
@@ -25,7 +23,10 @@ def main():
     twutt_text = get_phrase()
     print('[!] Gonna twutt: {twutt_text}'.format(twutt_text=twutt_text))
     twitter = auth()
-    twitter.update_status(status=twutt_text)
+    try:
+       twitter.update_status(status=twutt_text)
+    except TwythonError as e:
+       print('[e] {error}'.format(error=e))
 
 if __name__ == "__main__":
     main()

@@ -2,6 +2,4 @@ httplib2==0.9
 oauthlib==0.7.2
 requests==2.5.1
 requests-oauthlib==0.4.2
-twython==3.2.0
-twython-django==1.5.2
-wsgiref==0.1.2
+twython==3.3.0
