@@ -1,7 +1,7 @@
 #!/bin/sh
 
 BOTNAME=woprthings
-OWNER=bshumate
+OWNER=brian
 
 cd /home/$OWNER/bots/$BOTNAME
 . /home/$OWNER/.virtualenvs/$BOTNAME/bin/activate
